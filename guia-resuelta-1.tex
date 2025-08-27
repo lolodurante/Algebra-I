@@ -10,6 +10,7 @@
 
 % Useful packages
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{enumitem}
@@ -24,7 +25,7 @@
 {Esta es la resolución de la primer guía de ejercicios de Álgebra 1 para Ciencias de la Computación en la UBA.}
 
 \section{Conjuntos}
-\subsection{Dado el conjunto $A = \{ 1, 2, 3\}$ , determinar cuáles de las siguientes afirmaciones son verdaderas.}
+\subsection{Dado el conjunto \texorpdfstring{$A = \{ 1, 2, 3\}$}{A = {1, 2, 3}}, determinar cuáles de las siguientes afirmaciones son verdaderas.}
 
 \begin{enumerate}[label=\roman*)]
     \item $1 \in \mathcal{A}$
@@ -45,7 +46,7 @@
     \item $\{2\} \notin$ A: el elemento $\{2\}$ no pertenece al conjunto A. 
 \end{enumerate}
 
-\subsection{Dado el conjunto $A = \{1, 2, \{3\}, \{1,2\}\}$, determinar cuáles de las siguientes afirmaciones son verdaderas.}
+\subsection{Dado el conjunto \texorpdfstring{$A = \{1, 2, \{3\}, \{1,2\}\}$}{A = {1, 2, {3}, {1,2}}}, determinar cuáles de las siguientes afirmaciones son verdaderas.}
 
 \begin{multicols}{2}
 \begin{enumerate}[label=\roman*)]
@@ -80,5 +81,28 @@
     \item $A \in A$: es verdadero ya que todo conjunto es subconjunto de si por definición.
 \end{enumerate}
 
-\subsection{Determinar si }
+\section*{3. Determinar si $A \subseteq B$ en cada uno de los siguientes casos.}
+
+\begin{enumerate}[label=\roman*)]
+    \item $A = \{1,2,3\}, \quad B = \{5,4,3,2,1\}$
+    \item $A = \{1,2,3\}, \quad B = \{1,2,\{3\},-3\}$
+    \item $A = \{x \in \mathbb{R} \mid 2 < |x| < 3\}, \quad B = \{x \in \mathbb{R} \mid x^2 < 3\}$
+    \item $A = \{\emptyset\}, \quad B = \emptyset$
+\end{enumerate}
+
+\textbf{Resolución}
+\begin{enumerate}[label=\roman*)]
+    \item $A \subseteq B$
+    \item $A \not\subseteq B$
+    \item $A \not\subseteq B$
+    \begin{align*}
+        A &= [-3,-2] \cup (2,3) \\
+        B &= (-\sqrt{3}, \sqrt{3}) \\[6pt]
+        &\text{Entonces, } A \nsubseteq B \\
+        &\text{Por ejemplo, } -2.5 \in A \;\text{ pero }\; -2.5 \notin B.
+    \end{align*}
+    \item $A \not\subseteq B$
+\end{enumerate}
+
+
 \end{document}

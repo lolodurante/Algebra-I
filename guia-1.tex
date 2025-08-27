@@ -1,0 +1,84 @@
+\documentclass{article}
+
+% Language setting
+\usepackage[spanish]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{multicol}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}
+
+\title{Guia Álgebra - Práctica 1}
+\author{Lorenzo Durante}
+
+\begin{document}
+\maketitle
+
+\section{Introducción}
+{Esta es la resolución de la primer guía de ejercicios de Álgebra 1 para Ciencias de la Computación en la UBA.}
+
+\section{Conjuntos}
+\subsection{Dado el conjunto $A = \{ 1, 2, 3\}$ , determinar cuáles de las siguientes afirmaciones son verdaderas.}
+
+\begin{enumerate}[label=\roman*)]
+    \item $1 \in \mathcal{A}$
+    \item $\{1\} \subseteq \mathcal{A}$
+    \item $\{2,1\} \subseteq \mathcal{A}$
+    \item $\{1,3\} \in \mathcal{A}$
+    \item $\{2\} \in \mathcal{A}$
+\end{enumerate}
+\textbf{Resolución}
+\begin{enumerate}[label=\roman*)]
+    \item $1 \in A$: el número $1$ es un elemento que pertenece al conjunto $A$.
+    
+    \item $\{1\} \subseteq A$: el conjunto $\{1\}$ está contenido en $A$, ya que todos sus elementos pertenecen a $A$.
+    
+    \item $\{2,1\} \subseteq A$: el conjunto $\{2,1\}$ es un subconjunto de $A$, pues tanto $1$ como $2$ pertenecen a $A$.
+    
+    \item $\{1,3\} \notin A$: el conjunto $\{1,3\}$ no es un elemento de $A$, es decir, $A$ no contiene a $\{1,3\}$ como uno de sus elementos.
+    \item $\{2\} \notin$ A: el elemento $\{2\}$ no pertenece al conjunto A. 
+\end{enumerate}
+
+\subsection{Dado el conjunto $A = \{1, 2, \{3\}, \{1,2\}\}$, determinar cuáles de las siguientes afirmaciones son verdaderas.}
+
+\begin{multicols}{2}
+\begin{enumerate}[label=\roman*)]
+    \item $3 \in A$
+    \item $\{3\} \subseteq A$
+    \item $\{3\} \in A$
+    \item $\{\{3\}\} \subseteq A$
+    \item $\{1,2\} \in A$
+    \item $\{1,2\} \subseteq A$
+    \item $\{\{1,2\}\} \subseteq A$
+    \item $\{\{1,2\}, 3\} \subseteq A$
+    \item $\emptyset \in A$
+    \item $\emptyset \subseteq A$
+    \item $A \in A$
+    \item $A \subseteq A$
+\end{enumerate}
+\end{multicols}
+
+\textbf{Resolución}
+\begin{enumerate}[label=\roman*)]
+    \item $3 \notin A$: es falso ya que el número $3$ no es un elemento del conjunto $A$.
+    \item $\{3\} \not\subseteq A$: es falso ya que no todos los elementos estan contenidos por el conjunto A. En este caso, el elemento 3 no existe en el conjunto A.
+    \item $\{3\} \in A$: es verdadero porque el elemento $\{3\}$ pertenece en el conjunto A.
+    \item $\{\{3\}\} \subseteq A$: es verdadero ya que todos los elementos dentro del conjunto \{\{3\}\} pertenecen al conjunto A. En este caso, el unico elemento es \{3\} y este pertence a el conjunto A. 
+    \item $\{1,2\} \in A$: esto es verdadero ya que el elemento $\{1,2\}$ pertenece al conjunto A.
+    \item $\{1,2\} \subseteq A$: es verdadero porque todos los elementos del conjunto $\{1,2\}$ pertenecen al conjunto A. 
+    \item $\{\{1,2\}\} \subseteq A$: es verdadero porque todos los elementos del conjunto \{\{1,2\}\} pertenecen al conjunto A. En este caso, $\{1,2\}$ pertenece al conjunto A. 
+    \item $\{\{1,2\},3\} \not\subseteq A$: es falso ya que no todos los elementos pertenecen al conjunto. En este caso el elemento $\{1,2\}$ pertenece pero el elemento 3 no pertenece.
+    \item $\emptyset \not\subseteq A$: es falso ya que ninguno de los elementos del conjunto A es $\emptyset$.
+    \item $\emptyset \subseteq A$: es verdadero ya que el elemento vacío es subconjunto de todos los conjuntos por definición ya que no contiene elementos que pueda contradecir la condición.
+    \item $A \not\in A$: es falso ya que dentro de A no existe ningun subconjunto que sea A.
+    \item $A \in A$: es verdadero ya que todo conjunto es subconjunto de si por definición.
+\end{enumerate}
+
+\subsection{Determinar si }
+\end{document}

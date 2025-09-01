@@ -49,15 +49,11 @@ Esta es la resolución de la primera guía de ejercicios de Álgebra 1 para Cien
 \textbf{Resolución}
 
 \begin{enumerate}[label=\roman*)]
-    \item \(1 \in A\): el número \(1\) es un elemento que pertenece al conjunto \(A\).
-    
-    \item \(\{1\} \subseteq A\): el conjunto \(\{1\}\) está contenido en \(A\), ya que todos sus elementos pertenecen a \(A\).
-    
-    \item \(\{2,1\} \subseteq A\): el conjunto \(\{2,1\}\) es un subconjunto de \(A\), pues tanto \(1\) como \(2\) pertenecen a \(A\).
-    
-    \item \(\{1,3\} \notin A\): el conjunto \(\{1,3\}\) no es un elemento de \(A\), es decir, \(A\) no contiene a \(\{1,3\}\) como uno de sus elementos.
-    
-    \item \(\{2\} \notin A\): el elemento \(\{2\}\) no pertenece al conjunto \(A\). 
+    \item \(1 \in A\): el número \(1\) pertenece al conjunto \(A\). \textbf{(Verdadero)}
+    \item \(\{1\} \subseteq A\): todos los elementos de \(\{1\}\) pertenecen a \(A\). \textbf{(Verdadero)}
+    \item \(\{2,1\} \subseteq A\): \(1\) y \(2\) pertenecen a \(A\). \textbf{(Verdadero)}
+    \item \(\{1,3\} \notin A\): \(A\) no contiene al conjunto \(\{1,3\}\) como \emph{elemento}. \textbf{(Verdadero)}
+    \item \(\{2\} \notin A\): el elemento \(\{2\}\) no pertenece a \(A\). \textbf{(Verdadero)}
 \end{enumerate}
 
 \subsection{Dado el conjunto \(A = \{1, 2, \{3\}, \{1,2\}\}\), determinar cuáles de las siguientes afirmaciones son verdaderas.}
@@ -81,18 +77,18 @@ Esta es la resolución de la primera guía de ejercicios de Álgebra 1 para Cien
 
 \textbf{Resolución}
 \begin{enumerate}[label=\roman*)]
-    \item \(3 \notin A\): es falso ya que el número \(3\) no es un elemento del conjunto \(A\).
-    \item \(\{3\} \not\subseteq A\): es falso ya que el elemento \(3\) no está en \(A\).
-    \item \(\{3\} \in A\): es verdadero porque el elemento \(\{3\}\) pertenece al conjunto \(A\).
-    \item \(\{\{3\}\} \subseteq A\): es verdadero ya que el único elemento de este conjunto es \(\{3\}\) y este pertenece a \(A\). 
-    \item \(\{1,2\} \in A\): verdadero, ya que \(\{1,2\}\) pertenece a \(A\).
-    \item \(\{1,2\} \subseteq A\): verdadero porque \(1\) y \(2\) pertenecen a \(A\). 
-    \item \(\{\{1,2\}\} \subseteq A\): verdadero porque \(\{1,2\}\) pertenece a \(A\). 
-    \item \(\{\{1,2\},3\} \not\subseteq A\): falso, ya que \(3\) no pertenece a \(A\). 
-    \item \(\emptyset \in A\): falso, ya que \(\emptyset\) no está como elemento dentro de \(A\).
-    \item \(\emptyset \subseteq A\): verdadero, ya que el conjunto vacío es subconjunto de todos los conjuntos. 
-    \item \(A \in A\): falso, ya que \(A\) no es un elemento de sí mismo.
-    \item \(A \subseteq A\): verdadero, ya que todo conjunto es subconjunto de sí mismo.
+    \item \(3 \notin A\). \textbf{Falso} que \(3 \in A\).
+    \item \(\{3\} \not\subseteq A\). \textbf{Falso} que \(\{3\}\subseteq A\).
+    \item \(\{3\} \in A\). \textbf{Verdadero}.
+    \item \(\{\{3\}\} \subseteq A\). \textbf{Verdadero}.
+    \item \(\{1,2\} \in A\). \textbf{Verdadero}.
+    \item \(\{1,2\} \subseteq A\). \textbf{Verdadero}.
+    \item \(\{\{1,2\}\} \subseteq A\). \textbf{Verdadero}.
+    \item \(\{\{1,2\},3\} \not\subseteq A\) porque \(3\notin A\). \textbf{Falso} que sea subconjunto.
+    \item \(\emptyset \in A\). \textbf{Falso}.
+    \item \(\emptyset \subseteq A\). \textbf{Verdadero}.
+    \item \(A \in A\). \textbf{Falso}.
+    \item \(A \subseteq A\). \textbf{Verdadero}.
 \end{enumerate}
 
 \subsection{Determinar si \(A \subseteq B\) en cada uno de los siguientes casos.}
@@ -106,16 +102,15 @@ Esta es la resolución de la primera guía de ejercicios de Álgebra 1 para Cien
 
 \textbf{Resolución}
 \begin{enumerate}[label=\roman*)]
-    \item \(A \subseteq B\)
-    \item \(A \not\subseteq B\)
-    \item \(A \not\subseteq B\)
-    \begin{align*}
-        A &= [-3,-2] \cup (2,3) \\
-        B &= (-\sqrt{3}, \sqrt{3}) \\[6pt]
-        &\text{Entonces, } A \nsubseteq B \\
-        &\text{Por ejemplo, } -2.5 \in A \;\text{ pero }\; -2.5 \notin B.
-    \end{align*}
-    \item \(A \not\subseteq B\)
+    \item \(A \subseteq B\).
+    \item \(A \not\subseteq B\) (porque \(3\notin B\)).
+    \item \(A \not\subseteq B\). En efecto,
+    \[
+      A = (-3,-2)\,\cup\,(2,3),\qquad
+      B = (-\sqrt{3}, \sqrt{3}),
+    \]
+    y, por ejemplo, \(-2{,}5 \in A\) pero \(-2{,}5 \notin B\).
+    \item \(A \not\subseteq B\) (porque \(\emptyset\notin \emptyset\)).
 \end{enumerate}
 
 \subsection{Dados los subconjuntos}
@@ -137,85 +132,32 @@ hallar
 
 \textbf{Resolución}
 \begin{enumerate}[label=\roman*)]
-    \item \(A \cap (B \triangle C) = \{1, -2, 3\}\)
-    
-    Pienso el ejercicio por partes: primero analizo \(B \triangle C\). La diferencia simétrica contiene lo que está en uno u otro, pero no en ambos.
-    \begin{align*}
-        B &= \{1,\{3\}, 10 \} \\
-        C &= \{-2,\{1,2,3\},3\} \\
-        B \triangle C &= \{1, \{3\}, 10, -2, \{1,2,3\}, 3\}
-    \end{align*}
-    Sea \(D = B \triangle C\), evaluemos ahora la intersección entre \(A\) y \(D\).
-    \begin{align*}
-        A &= \{1,-2,7,3\}, \\
-        D &= \{1, \{3\}, 10, -2, \{1,2,3\}, 3\}\\
-        A \cap D &= \{1, -2, 3\}
-    \end{align*}
-    Entonces, el resultado de la intersección es \(\{1, -2, 3\}\).
-    
-    \item \((A \cap B) \triangle (A \cap C) =  \{1, -2, 3\} \) \\[6pt]
-    Primero analizo la primera intersección:
-    \begin{align*}
-        A &= \{1,-2,7,3\}\\
-        B &= \{1, \{3\}, 10\}\\
-        A \cap B &= \{1\}
-    \end{align*}
-    Ahora analizo la segunda intersección:
-    \begin{align*}
-        A &= \{1, -2, 7, 3\}\\
-        C &= \{-2, \{1,2,3\}, 3\}\\
-        A \cap C &= \{-2, 3\}
-    \end{align*}
-    Ahora podemos calcular la diferencia simétrica:
-    \begin{align*}
-        A \cap B &= \{1\} \\
-        A \cap C &= \{-2, 3\} \\
-        (A \cap B) \triangle (A \cap C) &= \{1, -2, 3\}
-    \end{align*}
-    
-    \item \(A^{c} \cap B^{c} \cap C^{c} = \emptyset\) \\[6pt]
-    El complemento se toma respecto al conjunto referencial \(V\). 
-    
-    \textbf{Primer complemento:}
-    \begin{align*}
-        A &= \{1,-2,7,3\}\\
-        V &= \{1, \{3\}, -2, 7, 10, \{1,2,3\},3\}\\
-        A^{c} &= \{\{3\}, 10, \{1,2,3\}\} 
-    \end{align*}
-    
-    \textbf{Segundo complemento:}
-    \begin{align*}
-        B &= \{1,\{3\}, 10\}\\
-        V &= \{1, \{3\}, -2, 7, 10, \{1,2,3\},3\}\\
-        B^{c} &= \{-2, 7, \{1,2,3\}, 3\}
-    \end{align*}
-    
-    \textbf{Tercer complemento:}
-    \begin{align*}
-        C &= \{-2, \{1,2,3\}, 3\}\\
-        V &= \{1, \{3\}, -2, 7, 10, \{1,2,3\}, 3\}\\
-        C^{c} &= \{1, \{3\}, 7, 10\}
-    \end{align*}
+    \item \(A \cap (B \triangle C) = \{1, -2, 3\}\).
 
-    \textbf{Intersección final:}
-    \begin{align*}
-        A^{c} &= \{\{3\}, 10, \{1,2,3\}\}\\
-        B^{c} &= \{-2, 7, \{1,2,3\}, 3\}\\
-        C^{c} &= \{1, \{3\}, 7, 10\}\\
-        A^{c} \cap B^{c} \cap C^{c} &= \emptyset
-    \end{align*}
+    \item \((A \cap B) \triangle (A \cap C) = \{1, -2, 3\}\).
+    \[
+      A\cap B=\{1\},\qquad A\cap C=\{-2,3\}.
+    \]
+
+    \item \(A^{c} \cap B^{c} \cap C^{c} = \emptyset\). Con \(V\) como referencial:
+    \[
+      A^{c}=\{\{3\},10,\{1,2,3\}\},\;
+      B^{c}=\{-2,7,\{1,2,3\},3\},\;
+      C^{c}=\{1,\{3\},7,10\}.
+    \]
+    La intersección es vacía.
 \end{enumerate}
 
 \subsection{Dados subconjuntos \(A, B, C\) de un conjunto referencial \(V\), describir 
 \((A \cup B \cup C)^{c}\) en términos de intersecciones y complementos, 
 y \((A \cap B \cap C)^{c}\) en términos de uniones y complementos.}
 
-\textbf{Resolución}\\[6pt]
-Resolvemos con leyes de Morgan: 
-\begin{align*}
-    (A \cup B \cup C)^{c} &= A^{c} \cap B^{c} \cap C^{c} \\
-    (A \cap B \cap C)^{c} &= A^{c} \cup B^{c} \cup C^{c}
-\end{align*}
+\textbf{Resolución.} (Leyes de De Morgan)
+\[
+    (A \cup B \cup C)^{c} = A^{c} \cap B^{c} \cap C^{c},
+    \qquad
+    (A \cap B \cap C)^{c} = A^{c} \cup B^{c} \cup C^{c}.
+\]
 
 \subsection{Sean \(A\), \(B\) y \(C\) conjuntos. Representar en un diagrama de Venn}
 
@@ -227,7 +169,7 @@ Resolvemos con leyes de Morgan:
 \end{enumerate}
 \end{multicols}
 
-Completado en hoja
+Completado en hoja.
 
 \subsection{Encontrar fórmulas que describan las partes rayadas de los siguientes diagramas de Venn, utilizando únicamente intersecciones, uniones y complementos.}
 \begin{figure}[h!]
@@ -240,7 +182,7 @@ Completado en hoja
 \textbf{Resolución}
 \begin{enumerate}[label=\roman*)]
     \item \((B^{c} \cap A) \cup (A^{c} \cap C \cap B)\)
-    \item \((A \cap B^{c} \cap C^{c}) \cup (C \cap B^{c} \cap C^{c})\) 
+    \item \textit{(Revisar con el diagrama)} \((A \cap B^{c} \cap C^{c}) \cup (A^{c} \cap B^{c} \cap C)\)
     \item \((C^{c} \cap B \cap A) \cup (A^{c} \cap B \cap C) \cup (B^{c} \cap A \cap C)\)
 \end{enumerate}
 
@@ -261,24 +203,28 @@ Completado en hoja
     \item \(P(A) = \{\emptyset, \{1\}, \{\{1,2\}\}, \{3\}, \{1, \{1,2\}\}, \{1, 3\}, \{\{1,2\}, 3\}, \{1, \{1,2\}, 3\}\}\)
 \end{enumerate}
 
-\subsection{Sean \(A\) y \(B\) conjuntos. Probar que \(P(A) \subseteq P(B) \Leftrightarrow A \subseteq B\)}
+\subsection{Sean \(A\) y \(B\) conjuntos. Probar que \(P(A) \subseteq P(B) \Leftrightarrow A \subseteq B\).}
+
+\textbf{Demostración.}
+\emph{(\(\Rightarrow\))} Si \(P(A)\subseteq P(B)\) entonces, como \(A\in P(A)\), se tiene \(A\in P(B)\), luego \(A\subseteq B\).
+\emph{(\(\Leftarrow\))} Si \(A\subseteq B\) y \(X\in P(A)\), entonces \(X\subseteq A\subseteq B\), por lo tanto \(X\in P(B)\). Concluye \(P(A)\subseteq P(B)\).
 
 \subsection{Sean \(p, q\) proposiciones. Verificar que las siguientes expresiones tienen la misma tabla de verdad para concluir que son equivalentes.}
 
 \begin{enumerate}[label=\roman*)]
-\item \(p \Rightarrow q\), \quad \(\sim q \Rightarrow \sim p\), \quad \(\sim p \lor q\) \quad y \quad \(\sim (p \land \sim q)\).
+\item \(p \Rightarrow q\), \quad \(\neg q \Rightarrow \neg p\), \quad \(\neg p \lor q\) \quad y \quad \(\neg (p \land \neg q)\).
 
-Esto nos dice que podemos demostrar una afirmación de la forma \(p \Rightarrow q\) probando en su lugar 
-\(\sim q \Rightarrow \sim p\) (es decir \textit{demostrando el contrarrecíproco}), 
-o probando \(\sim (p \land \sim q)\) (esto es una \textit{demostración por reducción al absurdo}).
+Esto permite demostrar \(p \Rightarrow q\) probando en su lugar 
+\(\neg q \Rightarrow \neg p\) (contrarrecíproco), 
+o probando \(\neg (p \land \neg q)\) (reducción al absurdo).
 
-\item \(\sim (p \Rightarrow q)\) \quad y \quad \(p \land \sim q\).
-
+\item \(\neg (p \Rightarrow q)\) \quad y \quad \(p \land \neg q\).
 \end{enumerate}
 
 \textbf{Resolución}
 \begin{enumerate}[label=\roman*)]
-   \item \[
+   \item
+\[
 \begin{array}{|c|c|c|}
 \hline
 p & q & p \rightarrow q \\
@@ -289,25 +235,10 @@ F & V & V \\
 F & F & V \\
 \hline
 \end{array}
-\]
-
-\[
+\qquad
 \begin{array}{|c|c|c|}
 \hline
 p & q & \neg q \rightarrow \neg p \\
-\hline
-V & V & V \\
-V & F & V \\
-F & V & F \\
-F & F & V \\
-\hline
-\end{array}
-\]
-
-\[
-\begin{array}{|c|c|c|}
-\hline
-p & q & \neg p \and q \\
 \hline
 V & V & V \\
 V & F & F \\
@@ -316,8 +247,18 @@ F & F & V \\
 \hline
 \end{array}
 \]
-
 \[
+\begin{array}{|c|c|c|}
+\hline
+p & q & \neg p \lor q \\
+\hline
+V & V & V \\
+V & F & F \\
+F & V & V \\
+F & F & V \\
+\hline
+\end{array}
+\qquad
 \begin{array}{|c|c|c|}
 \hline
 p & q & \neg (p \land \neg q) \\
@@ -329,8 +270,7 @@ F & F & V \\
 \hline
 \end{array}
 \]
-
-Todas las tablas tienen la misma tabla de verdad por ende, son equivalentes. 
+Todas coinciden, por lo tanto son equivalentes.
 
 \item 
 \[
@@ -344,9 +284,7 @@ Todas las tablas tienen la misma tabla de verdad por ende, son equivalentes.
     F & F & F \\
     \hline
 \end{array}
-\]
-
-\[
+\qquad
 \begin{array}{|c|c|c|}
     \hline
     p & q & p \land \neg q \\
@@ -358,19 +296,149 @@ Todas las tablas tienen la misma tabla de verdad por ende, son equivalentes.
     \hline
 \end{array}
 \]
-Es equivalente. 
+Es equivalente.
 \end{enumerate}
 
 \subsection{Hallar contraejemplos para mostrar que las siguientes proposiciones son falsas.}
 
 \begin{enumerate}[label=\roman*)]
-    \item $\forall a \in \mathbb{N}, \; \frac{a-1}{a}$ no es un número entero.
-    \item $\forall x, y \in \mathbb{R}$ con $x, y$ positivos, $\sqrt{x+y} = \sqrt{x} + \sqrt{y}$.
-    \item $\forall x \in \mathbb{R}, \; x^2 > 4 \Rightarrow x > 2$.
+    \item \(\forall a \in \N,\; \dfrac{a-1}{a}\) no es un número entero.
+    \item \(\forall x, y \in \R\) con \(x,y>0,\; \sqrt{x+y} = \sqrt{x} + \sqrt{y}\).
+    \item \(\forall x \in \R,\; x^2 > 4 \Rightarrow x > 2\).
 \end{enumerate}
 
 \textbf{Resolución}
-\begin{enumerate}[label=\roman*]
-    \item 
+\begin{enumerate}[label=\roman*)]
+    \item Tomando \(a=1\): \(\dfrac{1-1}{1}=0\in\Z\). (Contraejemplo)
+    \item Tomando \(x=y=1\): \(\sqrt{2}\neq 1+1\). (Contraejemplo)
+    \item Tomando \(x=-3\): \(x^2=9>4\) pero \(-3\not>2\). (Contraejemplo)
 \end{enumerate}
+
+\subsection{}
+
+\begin{enumerate}[label=\roman*)]
+    \item Decidir si las siguientes proposiciones son verdaderas o falsas, justificando debidamente.
+    \begin{enumerate}[label=(\alph*)]
+        \item $\forall n \in \mathbb{N}, \; n \geq 5 \; \lor \; n \leq 8.$
+        \item $\exists n \in \mathbb{N} \; / \; n \geq 5 \; \land \; n \leq 8.$
+        \item $\forall n \in \mathbb{N}, \; \exists m \in \mathbb{N} \; / \; m > n.$
+        \item $\exists n \in \mathbb{N} \; / \; \forall m \in \mathbb{N}, \; m > n.$
+        \item $\forall x \in \mathbb{R}, \; x > 3 \; \Rightarrow \; x^2 > 4.$
+        \item Si $n$ es un número natural terminado en $4$, entonces $n$ es par.
+    \end{enumerate}
+
+    \item Negar las proposiciones anteriores, y en cada caso verificar que la proposición negada tiene el valor de verdad opuesto al de la original.
+
+    \item Reescribir las proposiciones \textbf{e)} y \textbf{f)} del ítem i) utilizando las equivalencias del ejercicio 10i).
+\end{enumerate}
+
+\begin{enumerate}[label=\roman*)]
+    \item \begin{enumerate}
+        \item Esta proposición es \textbf{verdadera}, ya que para todo $n \in \mathbb{N}$ siempre se cumple al menos una de las condiciones. 
+        Si $n < 5$, entonces $n \leq 8$ es cierto; y si $n \geq 5$, se cumple la primera condición. 
+        No existe valor de $n$ que invalide ambas.
+        
+        \item La proposición es \textbf{verdadera} porque todos los números naturales  cumplen simultáneamente $n \geq 5$ y $n \leq 8$. 
+        Por ejemplo, $n=6$ satisface ambas condiciones, por lo que la proposición es cierta.
+
+        \item La proposición es \textbf{falsa} porque siempre se puede elegir $m = n$ lo que contradice la proposición.
+
+        \item La proposición es \textbf{falsa} por el mismo motivo del item anterior. Siempre se puede elegir $m = n$.
+
+        \item La proposición es \textbf{falsa} porque si $x = 1$, $1 > 3$ es falsO y $1^{2} > 4$ es nuevamente falso por lo que la proposición es falsa.
+
+        \item La proposición es \textbf{falsa}.
+    \end{enumerate}
+
+\begin{enumerate}
+  \item
+  \begin{enumerate}
+    \item 
+    \begin{align*}
+      \neg \big(\forall n \in \mathbb{N}\;\mid\; n \ge 5 \,\lor\, n \le 8\big) \\
+      \equiv\ \exists n \in \mathbb{N}\;\mid\; \neg(n \ge 5 \,\lor\, n \le 8) \\
+      \equiv\ \exists n \in \mathbb{N}\;\mid\; (n < 5) \,\land\, (n > 8)
+    \end{align*}
+  \end{enumerate}
+  La negación es imposible, no existe un posible valor de $n$ que sea a la misma vez menos que 5 y mayor que 8. Que sea imposible, confirma que la proposición original es \textbf{verdadera}.
+  \item
+    \begin{align*}
+        \forall n \in \mathbb{N} \;\mid\; \neg(n \geq 5 \lor n \leq 8) \\
+        \equiv \forall n \in \mathbb{N} \;\mid\; (n < 5 \land n > 8)
+    \end{align*}
+    La negación es imposible por lo que se confirma que la proposición original es \textbf{verdadera}.
+  \item \begin{align*}
+    \exists n \in \mathbb{N}, \forall m \in \mathbb{N} \mid \neg (m > n) \\ 
+    \equiv \exists n \in \mathbb{N}, \forall m \in \mathbb{N} \mid m \leq n
+  \end{align*}
+  Esto es verdadero ya que 1 cumple la condición. Esto hace que la negación sea verdadera y confirma que la proposición original es \textbf{falsa}.
+  \item \begin{align*}
+    \forall n \in \mathbb{N} \mid \exists m \in \mathbb{N}, \neg(m > n )\\
+    \forall n \in \mathbb{N} \mid \exists m \in \mathbb{N}, m \leq n
+  \end{align*}
+  Esta negación es falsa ya que se puede elegir los valores para $n = 1$ y $m = 1$ para que no se cumpla la negación. Esto hace que la proposición original se confirme como \textbf{verdadera}. 
+  \item \begin{align*}
+    \exists x \in \mathbb{R}, \neg (x > 3 \rightarrow x^{2} > 4)\\
+    \exists x \in \mathbb{R}, (x > 3) \land (x^{2} \leq 4)
+  \end{align*}
+  Esta negación es imposible lo que hace la preposición original \textbf{verdadera}.
+  \item Existe un número natural que termina en 4 y no es par. \\
+  Esta negación es falsa por lo que la proposición original es \textbf{verdadera}. 
+\end{enumerate}
+\end{enumerate}
+\subsection{Determinar cuáles de las siguientes afirmaciones son verdaderas 
+cualesquiera sean los subconjuntos $A$, $B$ y $C$ de un conjunto referencial $V$ 
+y cuáles no. Para las que sean verdaderas, dar una demostración, para las otras dar un contraejemplo. }
+
+\begin{enumerate}[label=\roman*)]
+  \item $(A \triangle B) - C = (A - C) \triangle (B - C).$
+  \item $(A \cap B) \triangle C = (A \triangle C) \cap (B \triangle C).$
+  \item $C \subseteq A \;\;\Rightarrow\;\; B \cap C \subseteq (A \triangle B)^c.$
+  \item $A \triangle B = \emptyset \;\;\Leftrightarrow\;\; A = B.$
+\end{enumerate}
+
+\begin{enumerate}[label=\roman*)]
+\item Demostrar que
+\[
+(A \triangle B) - C \;=\; (A - C) \triangle (B - C).
+\]
+
+\textbf{Demostración.} 
+
+\begin{align*}
+    (A \triangle B) - C &= (A - C) \triangle (B - C ) \\
+    [(A - B) \cup (B - A)] - C &= [(A - C) - (B - C)] \cup [(B - C) - (A - C)] \\
+    [(A - B) - C \cup (B - A) - C] &= [A - (B \cup C)] \cup [B - (C \cup A)] \\
+    A - (B \cup C) \cup B - (A \cup C) &= A (B \cup C) \cup B - (A \cup C)
+\end{align*}
+
+\[
+A = \{1\}, \quad B = \{2\}, \quad C = \{1,3\}.
+\]
+
+Verifiquemos la igualdad en este caso:
+
+\textbf{(i) Lado izquierdo}
+\begin{align*}
+(A \cap B) \triangle C 
+&= \{1\}\cap\{2\} \;\triangle\; \{1,3\} \\
+&= \varnothing \;\triangle\; \{1,3\} \\
+&= \{1,3\}.
+\end{align*}
+
+\textbf{(ii) Lado derecho}
+\begin{align*}
+(A \triangle C)\cap(B \triangle C) 
+&= \big(\{1\}\triangle\{1,3\}\big) \;\cap\; \big(\{2\}\triangle\{1,3\}\big) \\
+&= \{3\}\cap\{1,2,3\} \\
+&= \{3\}.
+\end{align*}
+
+\textbf{Conclusión.} \\
+El lado izquierdo resulta en $\{1,3\}$, mientras que el lado derecho resulta en $\{3\}$. 
+Por lo tanto, la igualdad no se cumple en este caso, lo que confirma que la proposición no es verdadera en general.
+
+\item 
+\end{enumerate}
+
 \end{document}

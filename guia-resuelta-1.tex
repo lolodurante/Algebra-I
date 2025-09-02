@@ -409,15 +409,16 @@ y cuáles no. Para las que sean verdaderas, dar una demostración, para las otra
     (A \triangle B) - C &= (A - C) \triangle (B - C ) \\
     [(A - B) \cup (B - A)] - C &= [(A - C) - (B - C)] \cup [(B - C) - (A - C)] \\
     [(A - B) - C \cup (B - A) - C] &= [A - (B \cup C)] \cup [B - (C \cup A)] \\
-    A - (B \cup C) \cup B - (A \cup C) &= A (B \cup C) \cup B - (A \cup C)
+    A - (B \cup C) \cup B - (A \cup C) &= A - (B \cup C) \cup B - (A \cup C)
 \end{align*}
 
+Las dos expresiones son iguales.
+
 \[
-A = \{1\}, \quad B = \{2\}, \quad C = \{1,3\}.
+    A = \{1\}, \quad B = \{2\}, \quad C = \{1,3\}.
 \]
 
-Verifiquemos la igualdad en este caso:
-
+\item 
 \textbf{(i) Lado izquierdo}
 \begin{align*}
 (A \cap B) \triangle C 
@@ -438,7 +439,101 @@ Verifiquemos la igualdad en este caso:
 El lado izquierdo resulta en $\{1,3\}$, mientras que el lado derecho resulta en $\{3\}$. 
 Por lo tanto, la igualdad no se cumple en este caso, lo que confirma que la proposición no es verdadera en general.
 
-\item 
+\item Demostrar que 
+\[
+    C \subseteq A \Rightarrow B \cap C \subseteq (A \triangle B)^{C}
+\]
+TODO -- FINALIZAR ESTE PUNTO
 \end{enumerate}
+
+\subsection{}
+
+Sean $A, B$ y $C$ subconjuntos de un conjunto referencial $V$. Probar que
+
+\begin{enumerate}
+    \item $A \cap (B \triangle C) = (A \cap B) \triangle (A \cap C)$.
+    \item $A - (B - C) = (A - B) \cup (A \cap C)$.
+    \item $A \triangle B \subseteq (A \triangle C) \cup (B \triangle C)$.
+    \item $(A \cap B)^{c} \cup (C \cap D)^{c} = (A \cap C)^{c} \cup (B \cap D)^{c}$.
+    \item $A \subseteq B \;\Rightarrow\; A \triangle B = B \cap A^{c}$.
+    \item $A \cap C = \varnothing \;\Rightarrow\; A \cap (B \triangle C) = A \cap B$.
+\end{enumerate}
+
+\begin{enumerate}
+    \item \begin{align*}
+        A \cup ( B \triangle C) = (A \cap B) \triangle (A \cap C)
+    \end{align*}
+\end{enumerate}
+\subsection{}
+\subsection{}
+
+\textbf{Relaciones}
+\subsection{Sean $A = \{1,2,3\}$ y $B = \{1,3,5,7\}$. Verificar si las siguientes son relaciones de $A$ en $B$ y en caso afirmativo graficarlas por medio de un diagrama con flechas de $A$ en $B$, y por medio de puntos en el producto cartesiano $A \times B$.}
+
+\begin{enumerate}[label=\roman*)]
+    \item $\mathcal{R} = \{(1,1), (1,3), (1,7), (3,1), (3,5)\}$.
+    \item $\mathcal{R} = \{(1,1), (1,3), (2,7), (3,2), (3,5)\}$.
+    \item $\mathcal{R} = \{(1,1), (2,7), (3,7)\}$.
+    \item $\mathcal{R} = \{(1,3), (2,1), (3,7)\}$.
+\end{enumerate}
+\textbf{Resolución}
+\begin{enumerate}[label=\roman*)]
+    \item Verdadero. 
+    \item Falso.
+    \item Verdadero.
+    \item Verdadero
+\end{enumerate}
+
+\subsection{Sean $A = \{1,2,3\}$ y $B = \{1,3,5,7\}$. Describir por extensión cada una de las relaciones siguientes de $A$ en $B$.}
+
+\begin{enumerate}[label=\roman*)]
+    \item $(a,b) \in \mathcal{R} \iff a \leq b$
+    \item $(a,b) \in \mathcal{R} \iff a > b$
+    \item $(a,b) \in \mathcal{R} \iff a \cdot b \text{ es par}$
+    \item $(a,b) \in \mathcal{R} \iff a + b > 6$
+\end{enumerate}
+
+\textbf{Resolución}
+\begin{enumerate}[label=\roman*)]
+    \item $ R_{1} =  \{(1,1), (1, 3), (1, 5), (1, 7), (2, 3), (2, 5), (2, 7), (3, 3), (3, 5), (3, 7)\}$
+    \item $ R_{2} = \{ (2,1 ), (3,1)\}$
+    \item $ R_{3} = \{(2,1), (2,3) (2, 5), (2, 7)\}$
+    \item $ R_{4} = \{(1, 7), (2,5), (2, 7), (3,5), (3,7)\} $
+\end{enumerate}
+
+\subsection*{Ejercicio 21}
+
+Sea $A = \{a, b, c, d, e, f\}$ y sea $\mathcal{R}$ la relación en $A$ representada por el gráfico:
+
+\begin{center}
+    \includegraphics[scale=1]{ejercicio21.png}
+\end{center}
+
+Hallar la mínima cantidad de pares que se deben agregar a $\mathcal{R}$ de manera que la nueva relación obtenida sea
+
+\begin{enumerate}[label=\roman*)]
+    \item reflexiva,
+    \item simétrica,
+    \item transitiva,
+    \item reflexiva y simétrica,
+    \item simétrica y transitiva,
+    \item de equivalencia.
+\end{enumerate}
+
+\textbf{Resolución}
+
+\begin{enumerate}[label=\roman*)]
+    \item 4
+    \item 1
+    \item 2
+    \item 5
+    \item 4
+    \item 5
+\end{enumerate}
+
+
+
+
+
 
 \end{document}

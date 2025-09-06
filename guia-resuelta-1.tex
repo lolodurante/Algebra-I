@@ -672,5 +672,124 @@ A \,R\, B \;\Longleftrightarrow\; (A \triangle B)\cap \{1,2,3\}=\varnothing.
     \item Clase de equivalencia = $2^{8}$ combinaciones de $\{1,2,3\}$
 \end{enumerate}
 
+\textbf{Funciones}
+\subsection{Determinar si $\mathcal{R}$ es una función de $A$ en $B$ en los casos}
+
+\begin{enumerate}[label=\roman*)]
+    \item $A = \{1,2,3,4,5\}, \; B = \{a,b,c,d\}, \; 
+    \mathcal{R} = \{(1,a),(2,a),(3,a),(4,b),(5,c),(3,d)\}$
+
+    \item $A = \{1,2,3,4,5\}, \; B = \{a,b,c,d\}, \; 
+    \mathcal{R} = \{(1,a),(2,a),(3,d),(4,b)\}$
+
+    \item $A = \{1,2,3,4,5\}, \; B = \{a,b,c,d\}, \; 
+    \mathcal{R} = \{(1,a),(2,a),(3,d),(4,b),(5,c)\}$
+
+    \item $A = \mathbb{N}, \; B = \mathbb{R}, \; 
+    \mathcal{R} = \{(a,b) \in \mathbb{N} \times \mathbb{R} \; / \; a = 2b - 3\}$
+
+    \item $A = \mathbb{R}, \; B = \mathbb{N}, \; 
+    \mathcal{R} = \{(a,b) \in \mathbb{R} \times \mathbb{N} \; / \; a = 2b - 3\}$
+
+    \item $A = \mathbb{Z}, \; B = \mathbb{Z}, \; 
+    \mathcal{R} = \{(a,b) \in \mathbb{Z} \times \mathbb{Z} \; / \; a+b \text{ es divisible por } 5\}$
+\end{enumerate}
+
+\begin{enumerate}[label=\roman*)]
+    \item No es una función
+    \item Es una función
+    \item Es una función
+    \item \begin{align*}
+        a &= 2 b - 3 \\
+        1 &=2 b - 3 \\
+        4 &= 2b \\
+        b &= 2 \\
+    \end{align*}
+    Para todos los valores de a existe una y solo una imagen, por ende es una función.
+    \item Esto significa que para que esto sea una función, la imagen (b) tiene que ser si o si valores $\mathbb{N}$. 
+    \begin{align*}
+        a &= 2b - 3 \\
+        - 100 &= 2b - 3 \\
+        - 97 &= 2b \\
+       - \frac{97}{2} &= b
+    \end{align*}
+    Con este contraejemplo, pudimos demostrar que para $a = - 100$, no existe un valor para la función. 
+\end{enumerate}
+
+\subsection{Determinar si las siguientes funciones son inyectivas, sobreyectivas o biyectivas. Para las que sean biyectivas hallar la inversa y, para las que no sean sobreyectivas, hallar la imagen.}
+
+\begin{enumerate}[label=\roman*)]
+    \item $f:\mathbb{R}\to\mathbb{R}$, \quad $f(x)=12x^{2}-5$.
+    \item $f:\mathbb{R}^{2}\to\mathbb{R}$, \quad $f(x,y)=x+y$.
+    \item $f:\mathbb{R}^{3}\to\mathbb{R}^{2}$, \quad $f(x,y,z)=(x+y,\,2z)$.
+    \item $f:\mathbb{N}\to\mathbb{N}$, \quad
+    $f(n)=
+        \begin{cases}
+            \dfrac{n}{2}, & \text{si $n$ es par},\\[6pt]
+            n+1, & \text{si $n$ es impar}.
+        \end{cases}$
+    \item $f:\mathbb{Z}\times\mathbb{Z}\to\mathbb{Z}$, \quad $f(a,b)=3a-2b$.
+    \item $f:\mathbb{Z}\to\mathbb{N}$, \quad
+    $f(a)=
+        \begin{cases}
+            2a, & \text{si } a>0,\\[4pt]
+            1-2a, & \text{si } a\le 0.
+        \end{cases}$
+\end{enumerate}
+\textbf{Resolución}
+\begin{enumerate}[label=\roman*)]
+    \item $f: \mathbb{R} \rightarrow \mathbb{R}, \quad f(x) = 12x^{2} - 5$ \\[4pt]
+    Es una función cuadrática, por esto la función no es inyectiva ya que para dos valores distintos de $x$, se obtiene el mismo valor de $y$ (imagen). 
+    Tampoco es sobreyectiva porque al ser cuadrática, no todos los valores de $y$ están incluidos. La imagen es $[-5, \infty)$.
+
+    \item $f: \mathbb{R}^{2} \rightarrow \mathbb{R}, \quad f(x, y) = x + y$ \\[4pt]
+    Para que una función sea inyectiva, debe cumplirse que $f(x_{1}, y_{1}) = f(x_{2}, y_{2}) \Rightarrow (x_{1}, y_{1}) = (x_{2}, y_{2})$. \\ 
+    Sin embargo, $f(1,0) = 1$ y $f(0,1) = 1$, lo que demuestra que para valores distintos de $(x,y)$ se logra la misma imagen. 
+    Por esto, no es inyectiva. La función es sobreyectiva porque cualquier combinación posible de (x, y) hacen toda la imagen de $y$.
+
+    \item $f:\mathbb{R}^{3}\to\mathbb{R}^{2}, \quad f(x,y,z)=(x+y,\,2z)$ \\[4pt]
+    Como ejemplo, $f(1,0,1) = (1,2)$ y $f(0,1,1) = (1,2)$. Por lo tanto, no es inyectiva. Es sobreyectiva. 
+
+    \item $f:\mathbb{N}\to\mathbb{N}, \quad
+    f(n)=
+        \begin{cases}
+            \dfrac{n}{2}, & \text{si $n$ es par},\\[6pt]
+            n+1, & \text{si $n$ es impar}.
+        \end{cases}$
+    
+    $f(4) = 2 y f(1) = 2$, por ende NO es inyectiva y NO es sobreyectiva porque $n = 1$ no pertenece a la imagen. La imagen es $[1, + \infty]$
+\end{enumerate}
+
+\subsection*{Hallar $f \circ g$ y $g \circ f$ (cuando sea posible) en los casos:}
+
+\begin{enumerate}[label=\roman*)]
+    \item $f:\mathbb{R}\to\mathbb{R}, \quad f(x)=2x^{2}-18 
+    \quad \text{y} \quad 
+    g:\mathbb{R}\to\mathbb{R}, \quad g(x)=x+3.$
+
+    \item $f:\mathbb{N}\to\mathbb{N}, \quad 
+    f(n)=
+    \begin{cases}
+        n-2, & \text{si $n$ es divisible por $4$},\\[6pt]
+        n+1, & \text{si $n$ no es divisible por $4$},
+    \end{cases}
+    \quad \text{y} \quad
+    g:\mathbb{N}\to\mathbb{N}, \quad g(n)=4n.$
+
+    \item $f:\mathbb{R}\to \mathbb{R}\times\mathbb{R}, \quad f(x)=(x+5,3x) 
+    \quad \text{y} \quad 
+    g:\mathbb{N}\to\mathbb{R}, \quad g(n)=\sqrt{n}.$
+\end{enumerate}
+
+\textbf{Resolución}
+
+\begin{enumerate}[label=\roman*)]
+    \item \begin{align*}
+        f(x) \circ f(g) &= 2(x + 3)^{2} \\
+        &\equiv 2 ((x + 3) (x + 3)) \\
+        &\equiv 2 (x^{2} + 3x + 3x + 9) \\
+        &\equiv 2x^{2} + 6x + 9 
+    \end{align*}
+\end{enumerate}
 
 \end{document}

@@ -672,6 +672,30 @@ A \,R\, B \;\Longleftrightarrow\; (A \triangle B)\cap \{1,2,3\}=\varnothing.
     \item Clase de equivalencia = $2^{8}$ combinaciones de $\{1,2,3\}$
 \end{enumerate}
 
+\subsection{Sean $A = \{ n \in \mathbb{N} \mid n \leq 92 \}$ y $\mathcal{R}$ la relación en $A$ definida por}
+\[
+x \,\mathcal{R}\, y \;\;\Longleftrightarrow\;\; x^{2} - y^{2} = 93x - 93y.
+\]
+
+\begin{enumerate}[label=\roman*)]
+    \item Probar que $\mathcal{R}$ es una relación de equivalencia. ¿Es antisimétrica?
+    \item Hallar la clase de equivalencia de cada $x \in A$. Deducir cuántas clases de equivalencia \textbf{distintas} determina la relación $\mathcal{R}$.
+\end{enumerate}
+
+\textbf{Resolución}
+
+\begin{enumerate}[label=\roman*)]
+    \item \begin{align*}
+        x^{2} - y^{2} + 93y - 93x = 0 \\
+        (x - y) (x + y) - 93 (x - y) = 0 \\
+        (x - y) (x + y - 93) = 0
+    \end{align*}
+    La unica manera para la que la ecuación de arriba se cumpla es si $ x - y = 0$. \\
+    Esto significa que x = y para que se cumpla. Esto comprueba que es reflexiva. 
+\end{enumerate}
+
+
+
 \textbf{Funciones}
 \subsection{Determinar si $\mathcal{R}$ es una función de $A$ en $B$ en los casos}
 
